@@ -1,0 +1,33 @@
+{
+    "name": "cunningsoft/logging-bundle",
+    "type": "symfony-bundle",
+    "description": "A bundle for Symfony2 to log errors to database and organize them",
+    "keywords": ["log", "logging"],
+    "homepage": "https://github.com/dmecke/LoggingBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Mecke",
+            "homepage": "https://github.com/dmecke"
+        },
+        {
+            "name": "Contributors",
+            "homepage": "https://github.com/dmecke/LoggingBundle/contributors"
+        }
+    ],
+    "require": {
+        "symfony/symfony": ">=2.2.0",
+        "doctrine/orm": ">=2.2.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    },
+    "autoload": {
+        "psr-0": {
+            "Cunningsoft\\LoggingBundle": ""
+        }
+    },
+    "target-dir": "Cunningsoft/LoggingBundle"
+}

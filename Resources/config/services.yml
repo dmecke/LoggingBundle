@@ -1,0 +1,10 @@
+services:
+    cunningsoft.monolog.handler.pdo:
+        class: Cunningsoft\LoggingBundle\Services\PDOHandler
+        arguments: [@pdo]
+
+    monolog.processor.session_request:
+        class: Cunningsoft\LoggingBundle\Services\SessionRequestProcessor
+        arguments: [@session]
+        tags:
+          - { name: monolog.processor, method: processRecord }
